@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.ac.uny.riset.ride">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="lib.almuwahhid.SuperUser.RequestHandler"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/ToolBarTheme">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="id.ac.uny.riset.ride.menu.main.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="id.ac.uny.riset.ride.menu.login.LoginActivity">
+        </activity>
+        <activity android:name="id.ac.uny.riset.ride.menu.register.RegisterActivity" />
+        <activity android:name="id.ac.uny.riset.ride.menu.main.adapter.AdapterTaskPertanyaan" />
+        <activity android:name="id.ac.uny.riset.ride.menu.surveySaya.SurveySayaActivity" />
+        <activity android:name="id.ac.uny.riset.ride.menu.surveySaya.adapter.AdapterSurveySaya" />
+        <activity android:name="id.ac.uny.riset.ride.menu.info.InfoActivity" />
+        <activity android:name="id.ac.uny.riset.ride.menu.survey.SurveyActivity" />
+        <activity android:name="id.ac.uny.riset.ride.menu.detailSurveySaya.DetailSurveySayaActivity" />
+        <activity android:name="id.ac.uny.riset.ride.menu.about.AboutActivity" />
+        <activity android:name="id.ac.uny.riset.ride.menu.panduan.PanduanActivity" />
+        <activity android:name="id.ac.uny.riset.ride.menu.pertanyaanSaya.PertanyaanSayaActivity" />
+        <activity android:name="id.ac.uny.riset.ride.menu.grafik.GrafikActivity" />
+        <activity android:name="id.ac.uny.riset.ride.menu.biodata.BiodataActivity" />
+
+        <service
+            android:name="id.ac.uny.riset.ride.Service.CheckIntervensiJovScheduler"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="id.ac.uny.riset.ride.Service.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="id.ac.uny.riset.ride.menu.splashscreen.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

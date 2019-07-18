@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_grafik"
+        android:id="@+id/action_graph"
+        android:orderInCategory="99"
+        android:title="@string/action_settings"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/ic_download_file"
+        android:id="@+id/action_report"
+        android:orderInCategory="90"
+        android:title="@string/action_settings"
+        app:showAsAction="always" />
+</menu>

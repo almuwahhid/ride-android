@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.register.RegisterActivity">
+    <include layout="@layout/main_toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/dimen_16dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_width="@dimen/dimen_108dp"
+                android:layout_height="@dimen/dimen_108dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_user_email"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:hint="Email"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_password"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                    android:hint="Password"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_nama_lengkap"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:hint="Nama Lengkap"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_jk"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/ic_wc_black_24dp"
+                    android:hint="Jenis Kelamin"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_user_bdate"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/ic_event_note_black_24dp"
+                    android:hint="Tanggal Lahir"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_alamat_asal"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/ic_location_city_black_24dp"
+                    android:hint="Alamat Asal"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_alamat"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/ic_location_city_black_24dp"
+                    android:hint="Alamat"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_agama"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/logo_24"
+                    android:hint="Agama"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_fakultas"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/ic_faculty"
+                    android:hint="Fakultas"
+                    android:cursorVisible="false"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textAutoComplete" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_wa"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/ic_wa"
+                    android:hint="Nomor WhatsApp"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_register"
+                android:layout_width="279dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:background="@drawable/bg_home_gradient"
+                android:text="D A F T A R"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

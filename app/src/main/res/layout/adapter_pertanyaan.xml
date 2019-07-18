@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_lay"
+    app:cardElevation="@dimen/dimen_2dp"
+    android:layout_margin="@dimen/dimen_8dp"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="@dimen/dimen_8dp"
+    app:cardCornerRadius="@dimen/dimen_4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/clickable"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    tools:context=".menu.main.adapter.AdapterTaskPertanyaan">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_centerVertical="true"
+            style="@style/Text.Standard"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_toRightOf="@+id/lay_date"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:lines="3"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel purus vel mauris fermentum lacinia a vitae neque. Morbi faucibus lectus diam, sit amet placerat tortor vulputate in. Duis euismod elit ac risus feugiat, a venenatis dui aliquet. In eget felis congue, pellentesque leo eu, vehicula ipsum. Integer sodales nunc nec lacus dictum facilisis. Aenean nibh nulla, efficitur sed lectus ut, rutrum dignissim ex. Proin lobortis lectus venenatis dolor faucibus, at scelerisque lacus molestie. Phasellus et neque vitae enim tempus ornare. Mauris rutrum varius accumsan. Duis diam metus, cursus sit amet ligula vulputate, euismod rhoncus enim. Phasellus vitae tristique dui. Nam nulla odio, pretium quis tellus sed, viverra dignissim dolor. Vestibulum elementum et mauris at lacinia. Sed quis nibh eu mi pharetra fringilla. Curabitur convallis, tellus sit amet pharetra venenatis, neque elit varius libero, vel tempor nisl libero id diam. Suspendisse potenti."
+            android:layout_toLeftOf="@id/lay_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/lay_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_date"
+                android:textStyle="bold"
+                android:text="21"
+                android:textSize="@dimen/dimen_32dp"
+                style="@style/Text.Title.OneRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_month_year"
+                android:textColor="@color/grey_400"
+                android:textStyle="bold"
+                android:text="Mei 2019"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Title"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/lay_status"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img_check"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/dimen_18dp"
+                android:layout_height="@dimen/dimen_18dp"
+                android:src="@drawable/ic_success"/>
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/grey_400"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Caption.Bold"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

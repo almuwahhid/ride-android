@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".menu.biodata.BiodataActivity">
+    <include layout="@layout/main_toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/dimen_8dp"
+            android:layout_height="match_parent">
+            <id.ac.uny.riset.ride.utils.avatarview.views.AvatarView
+                android:id="@+id/avatarView"
+                android:layout_margin="@dimen/dimen_8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <EditText
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:id="@+id/edt_nama_lengkap"
+                style="@style/Text.Standard.OneRow"
+                android:hint="Ketik Nama kamu disini"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="@dimen/dimen_140dp"
+                android:layout_height="wrap_content" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_jk"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/ic_wc_black_24dp"
+                    android:hint="Jenis Kelamin"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_user_bdate"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/ic_event_note_black_24dp"
+                    android:hint="Tanggal Lahir"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_alamat_asal"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/ic_location_city_black_24dp"
+                    android:hint="Alamat Asal"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_alamat"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/ic_location_city_black_24dp"
+                    android:hint="Alamat"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_agama"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/logo_24"
+                    android:hint="Agama"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_fakultas"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/ic_faculty"
+                    android:hint="Fakultas"
+                    android:cursorVisible="false"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textAutoComplete" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/margin_small"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_wa"
+                    style="@style/EditText"
+                    android:drawableLeft="@drawable/ic_wa"
+                    android:hint="Nomor WhatsApp"
+                    android:drawableTint="@color/grey_500"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_register"
+                android:layout_width="279dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:background="@drawable/bg_home_gradient"
+                android:text="U B A H"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

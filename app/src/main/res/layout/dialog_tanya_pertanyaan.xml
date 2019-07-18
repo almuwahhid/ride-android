@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/lay_dialog"
+    android:background="@color/white"
+    android:padding="@dimen/dimen_16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:text="Apakah kamu setuju dengan intervensi ini ?"
+        android:textAlignment="center"
+        style="@style/Text.Standard"
+        android:id="@+id/tv_tanya"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_below="@+id/tv_taskintervensi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:layout_below="@id/tv_tanya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_no"
+            android:text="TIDAK"
+            android:background="@drawable/button_round_corner_black"
+            android:layout_margin="@dimen/dimen_8dp"
+            android:layout_width="@dimen/dimen_140dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_ya"
+            android:textColor="@color/white"
+            android:text="YA"
+            android:background="@drawable/button_gradient"
+            android:layout_margin="@dimen/dimen_8dp"
+            android:layout_width="@dimen/dimen_140dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/dimen_16dp"
+    android:id="@+id/lay_dialog"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/Text.Title.Banner"
+                android:text="Informasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_close"
+                style="@style/clickable"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_close_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:padding="@dimen/dimen_8dp"
+            style="@style/Text.Standard"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jika Anda membutuhkan informasi dan konsultasi lebih lanjut tentang usaha pengembahan status identitas religius dapat menghubungi kontak admin"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:layout_marginRight="@dimen/dimen_4dp"
+                style="@style/clickable"
+                android:id="@+id/card_wa"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="@dimen/dimen_2dp"
+                app:cardBackgroundColor="@color/orange_400"
+                app:cardCornerRadius="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="@dimen/dimen_8dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:tint="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_call_black_24dp"/>
+                    <TextView
+                        android:textColor="@color/white"
+                        android:text="Hubungi Admin"
+                        android:layout_marginLeft="@dimen/dimen_8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="@dimen/dimen_4dp"
+                style="@style/clickable"
+                android:id="@+id/card_email"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="@dimen/dimen_2dp"
+                app:cardBackgroundColor="@color/green_400"
+                app:cardCornerRadius="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="@dimen/dimen_8dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:tint="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_email_black_24dp"/>
+                    <TextView
+                        android:textColor="@color/white"
+                        android:text="Email Admin"
+                        android:layout_marginLeft="@dimen/dimen_8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

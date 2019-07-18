@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_lay"
+    app:cardElevation="@dimen/dimen_2dp"
+    android:layout_margin="@dimen/dimen_8dp"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="@dimen/dimen_8dp"
+    app:cardCornerRadius="@dimen/dimen_4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/clickable"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_centerVertical="true"
+                style="@style/Text.Standard"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_toRightOf="@+id/lay_date"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="Lorem ipsum dolor sit amet, "
+                android:layout_toLeftOf="@id/lay_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/lay_date"
+                android:layout_width="@dimen/dimen_48dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_index"
+                    android:textStyle="bold"
+                    android:text="1"
+                    android:textSize="@dimen/dimen_32dp"
+                    style="@style/Text.Title.OneRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/dimen_14dp"
+                android:layout_height="@dimen/dimen_14dp"
+                android:src="@drawable/ic_coin"/>
+            <TextView
+                android:id="@+id/tv_skor"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_4dp"
+                android:text="Skor : 4"
+                style="@style/Text.Caption.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

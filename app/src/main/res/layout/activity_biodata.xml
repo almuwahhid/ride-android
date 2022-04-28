@@ -125,6 +125,7 @@
                     android:inputType="text" />
             </android.support.design.widget.TextInputLayout>
             <android.support.design.widget.TextInputLayout
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:gravity="bottom"
                 android:paddingTop="@dimen/margin_small"

@@ -6,7 +6,7 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
 
-    def version_name = "1.0.12"
+    def version_name = "1.0.13"
 
     compileSdkVersion 27
     defaultConfig {

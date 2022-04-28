@@ -19,7 +19,6 @@
         android:orientation="vertical">
 
         <id.ac.uny.riset.ride.utils.avatarview.views.AvatarView
-
             android:id="@+id/avatarView"
             android:layout_width="64dp"
             android:layout_gravity="center_horizontal"

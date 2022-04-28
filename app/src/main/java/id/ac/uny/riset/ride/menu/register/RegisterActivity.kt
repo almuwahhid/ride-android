@@ -50,7 +50,7 @@ class RegisterActivity : BaseActivity(), DatePickerDialog.OnDateSetListener, Reg
         forms.add(R.id.edt_jk)
         forms.add(R.id.edt_user_bdate)
         forms.add(R.id.edt_agama)
-        forms.add(R.id.edt_fakultas)
+//        forms.add(R.id.edt_fakultas)
         forms.add(R.id.edt_wa)
     }
 
